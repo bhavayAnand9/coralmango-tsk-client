@@ -1,11 +1,12 @@
 <div class="container">
+  <a #downloadZipLink class="download-zip-link"></a>
 <div class="row mt-5">
   <div class="col-md-4 mb-3" *ngFor="let file of files.allFiles">
     <div class="card text-center">
       <div class="card-body">
         <h5 class="card-title">{{file.title}}</h5>
         <p class="card-text">{{file.description}}</p>
-        <a href="" class="btn btn-primary">Download</a>
+        <a (click)="getFile(file._id)" [attr.href]="fileUrl" class="btn btn-primary">Download</a>
       </div>
       <div class="card-footer text-muted">
         Uploaded on:  {{file.dateUploaded | date:'shortDate'}}
