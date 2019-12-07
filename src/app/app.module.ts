@@ -8,6 +8,11 @@ import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import {FormsModule} from "@angular/forms";
 import { UploadComponent } from './upload/upload.component';
+import {AuthService} from './auth.service';
+import {AuthGuard} from './auth.guard';
+import {UploadServiceService} from './upload-service.service';
+import {TokenInterceptorService} from './token-interceptor.service';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +25,15 @@ import { UploadComponent } from './upload/upload.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard, UploadServiceService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

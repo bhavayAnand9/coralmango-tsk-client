@@ -4,6 +4,7 @@ import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {UploadComponent} from "./upload/upload.component";
+import {AuthGuard} from './auth.guard';
 
 
 const routes: Routes = [
@@ -22,11 +23,13 @@ const routes: Routes = [
   },
   {
     path: 'homepage',
-    component: HomepageComponent
+    component: HomepageComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'upload',
-    component: UploadComponent
+    component: UploadComponent,
+    canActivate: [AuthGuard]
   }
 ];
 

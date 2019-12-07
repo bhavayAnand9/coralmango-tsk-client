@@ -1,23 +1,23 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Router} from "@angular/router";
+import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private _registerURL = "http://localhost:8000/user/signup";
-  private _loginURL = "http://localhost:8000/user/login";
+  private _registerURL = 'http://localhost:8000/user/signup';
+  private _loginURL = 'http://localhost:8000/user/login';
 
   constructor(private http: HttpClient, private _router: Router) {
   }
 
-  registerUser(user){
+  registerUser(user) {
     return this.http.post<any>(this._registerURL, user);
   }
 
-  loginUser(user){
+  loginUser(user) {
     return this.http.post<any>(this._loginURL, user);
   }
 

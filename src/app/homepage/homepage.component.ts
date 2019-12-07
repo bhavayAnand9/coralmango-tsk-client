@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HomepageService} from '../homepage.service';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  files = [];
+
+  constructor(private _homePageService: HomepageService) { }
 
   ngOnInit() {
+    this._homePageService.getFiles().subscribe(
+      res => {
+        this.files = res;
+        console.log(res.allFiles);
+        console.log('ll');
+      },
+      error => console.error(error)
+    )
   }
 
 }

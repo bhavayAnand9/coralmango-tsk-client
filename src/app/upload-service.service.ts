@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class UploadServiceService {
 
-  private _uploadURL = "http://localhost:8000/";
+  private _uploadURL = "http://localhost:8000/file/submit-file";
 
   constructor(private _http: HttpClient) {
   }
