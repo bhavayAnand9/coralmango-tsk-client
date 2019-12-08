@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72a32ddb-c454-4518-a5eb-352c57a5c0ac" name="Default Changelist" comment="made project more configurable">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="72a32ddb-c454-4518-a5eb-352c57a5c0ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575721020595</updated>
       <workItem from="1575721025787" duration="22173000" />
-      <workItem from="1575798241916" duration="3553000" />
+      <workItem from="1575798241916" duration="4229000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1575721156248</created>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575802596821</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="nothing major">
+      <created>1575806836320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575806836320</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="added auth guard" />
     <MESSAGE value="completed" />
     <MESSAGE value="made project more configurable" />
-    <option name="LAST_COMMIT_MESSAGE" value="made project more configurable" />
+    <MESSAGE value="nothing major" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing major" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
