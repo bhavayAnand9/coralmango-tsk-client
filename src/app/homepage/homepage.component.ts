@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HomepageService} from '../homepage.service';
+import {File} from '../files.interface';
 
 @Component({
   selector: 'app-homepage',
@@ -8,7 +9,7 @@ import {HomepageService} from '../homepage.service';
 })
 export class HomepageComponent implements OnInit {
 
-  files = [];
+  files: Array<File> = [];
   fileUrl = undefined;
 
   constructor(private _homePageService: HomepageService) {
@@ -17,7 +18,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
     this._homePageService.getFiles().subscribe(
       res => {
-        this.files = res;
+        this.files = res.allFiles;
       },
       error => console.error(error)
     )

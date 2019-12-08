@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
-import {AuthService} from "../auth.service";
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {AuthService} from '../auth.service';
+import {RegisterUser} from '../registeruser.interface';
 
 @Component({
   selector: 'app-register',
@@ -10,7 +11,7 @@ import {AuthService} from "../auth.service";
 export class RegisterComponent implements OnInit {
 
 
-  registerUserData = {};
+  registerUserData: RegisterUser;
 
   constructor(private _auth: AuthService, private _router: Router) {
   }
