@@ -1,16 +1,20 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
+import {environment} from '../environments/environment.prod';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private _registerURL = 'http://localhost:8000/user/signup';
-  private _loginURL = 'http://localhost:8000/user/login';
+  private readonly _registerURL;
+  private readonly _loginURL;
 
   constructor(private http: HttpClient, private _router: Router) {
+    this._registerURL = environment.apiUrl + 'user/signup';
+    this._loginURL = environment.apiUrl + 'user/login';
   }
 
   registerUser(user) {
