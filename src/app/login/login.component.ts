@@ -11,7 +11,10 @@ import {LoginUser} from '../login.interface';
 export class LoginComponent implements OnInit {
 
 
-  loginUserData: LoginUser;
+  loginUserData: LoginUser = new class implements LoginUser {
+    email: string;
+    password: string;
+  };
 
   constructor(private _auth:AuthService, private _router: Router) { }
 

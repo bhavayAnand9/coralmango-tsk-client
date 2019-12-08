@@ -11,7 +11,10 @@ import {RegisterUser} from '../registeruser.interface';
 export class RegisterComponent implements OnInit {
 
 
-  registerUserData: RegisterUser;
+  registerUserData: RegisterUser = new class implements RegisterUser {
+    email: string;
+    password: string;
+  };
 
   constructor(private _auth: AuthService, private _router: Router) {
   }
