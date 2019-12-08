@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="72a32ddb-c454-4518-a5eb-352c57a5c0ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/homepage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/homepage.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/homepage/homepage.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/homepage/homepage.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/homepage/homepage.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/homepage/homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/homepage/homepage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/upload/upload.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/upload/upload.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575721020595</updated>
-      <workItem from="1575721025787" duration="17024000" />
+      <workItem from="1575721025787" duration="22173000" />
+      <workItem from="1575798241916" duration="1319000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1575721156248</created>
@@ -112,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575753182326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed redundant code">
+      <created>1575754457760</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575754457760</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added auth guard">
+      <created>1575754495484</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575754495484</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +140,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -133,7 +152,9 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="file upload to server" />
     <MESSAGE value="kommit" />
-    <option name="LAST_COMMIT_MESSAGE" value="kommit" />
+    <MESSAGE value="removed redundant code" />
+    <MESSAGE value="added auth guard" />
+    <option name="LAST_COMMIT_MESSAGE" value="added auth guard" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

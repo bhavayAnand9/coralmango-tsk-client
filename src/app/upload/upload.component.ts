@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {UploadServiceService as UploadService} from "../upload-service.service";
+import {Component, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {UploadServiceService as UploadService} from '../upload-service.service';
 import {Router} from '@angular/router';
 
 
@@ -33,9 +33,13 @@ export class UploadComponent implements OnInit {
 
     this._upload.uploadFile(fd).subscribe(res => {
       console.log(res);
+    }, error => console.error, () => {
+      alert('File Uploaded');
     });
 
-    this.router.navigate(['/homepage']);
+    // this.router.navigate(['/homepage']);
+    // window.location.reload();
+
   }
 
 }

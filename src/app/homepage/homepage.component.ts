@@ -9,7 +9,6 @@ import {HomepageService} from '../homepage.service';
 export class HomepageComponent implements OnInit {
 
   files = [];
-  abc: any = {};
   fileUrl = undefined;
 
   constructor(private _homePageService: HomepageService) {
@@ -25,15 +24,25 @@ export class HomepageComponent implements OnInit {
   }
 
   async getFile(_id: any, name: string) {
-    this.abc.file_id = _id;
     this._homePageService.getFile(_id).subscribe(res => {
       let myBlob = new Blob([res], {type: 'octet/stream'});
       const link = document.createElement('a');
       link.href = window.URL.createObjectURL(myBlob);
-      console.log(name);
       link.download = name;
       link.click();
     }, err => console.error);
+  }
+
+  async deleteFile(_id: string) {
+    this._homePageService.deleteFile(_id).subscribe(res => {
+      window.location.reload();
+    }, err => console.error);
+  }
+
+  async shortenUrl(_id: string) {
+    this._homePageService.shortenUrl(_id).subscribe(res => {
+      alert(`File URL: http://localhost:8000/file/get-file/${res.shortUrl}`);
+    });
   }
 
 }
