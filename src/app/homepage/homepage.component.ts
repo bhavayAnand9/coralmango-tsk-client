@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HomepageService} from '../homepage.service';
 import {File} from '../files.interface';
+import {environment} from '../../environments/environment.prod';
 
 @Component({
   selector: 'app-homepage',
@@ -42,7 +43,7 @@ export class HomepageComponent implements OnInit {
 
   async shortenUrl(_id: string) {
     this._homePageService.shortenUrl(_id).subscribe(res => {
-      alert(`File URL: http://localhost:8000/file/get-file/${res.shortUrl}`);
+      alert(`File URL: ${environment.apiUrl}file/get-file/${res.shortUrl}`);
     });
   }
 
