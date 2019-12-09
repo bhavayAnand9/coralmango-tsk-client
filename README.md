@@ -1,3 +1,24 @@
+first set up backend - instructions provided in readme.md file of backend repository
+
+install angular cli globally :
+npm install -g @angular/cli
+
+npm i
+
+ng serve 
+
+open up your browser and browse to http://localhost:4200
+
+
+
+
+
+
+
+
+
+
+
 # Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
