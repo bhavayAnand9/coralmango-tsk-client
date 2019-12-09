@@ -24,9 +24,16 @@ export class RegisterComponent implements OnInit {
 
   registerUser(){
     this._auth.registerUser(this.registerUserData)
-      .subscribe(console.log, console.error);
+      .subscribe(res => {
+        alert(res.Alert);
+      }, (err) => {
+        alert(err.Error.Alert);
+      });
 
-    this._router.navigate(['/login'])
+    setTimeout(() => {
+      this._router.navigate(['/login']);
+    }, 2000);
+
   }
 
 }

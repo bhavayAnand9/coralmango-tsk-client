@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
-import {environment} from '../environments/environment.prod';
+import {environment} from '../environments/environment';
 
 
 @Injectable({
@@ -34,7 +34,11 @@ export class AuthService {
   }
 
   logoutUser() {
-    localStorage.removeItem("token");
-    this._router.navigate(['/login']);
+    if (!this.loggedIn()) {
+      this._router.navigate(['/login']);
+    } else {
+      localStorage.removeItem('token');
+      this._router.navigate(['/login']);
+    }
   }
 }
