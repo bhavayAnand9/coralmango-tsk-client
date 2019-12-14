@@ -43,7 +43,7 @@ export class HomepageComponent implements OnInit {
 
   async shortenUrl(_id: string) {
     this._homePageService.shortenUrl(_id).subscribe(res => {
-      alert(`File URL: ${environment.apiUrl}file/get-file/${res.shortUrl}`);
+      alert(`File URL: ${environment.apiUrl}get-file/${res.shortUrl}`);
     });
   }
 

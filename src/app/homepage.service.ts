@@ -14,10 +14,10 @@ export class HomepageService {
   private readonly _shortUserFileUrl;
 
   constructor(private _http: HttpClient) {
-    this._userFilesURL = environment.apiUrl + 'file/get-user-files';
-    this._userFileURL = environment.apiUrl + 'file/get-user-file';
-    this._delUserFile = environment.apiUrl + 'file/del-user-file';
-    this._shortUserFileUrl = environment.apiUrl + 'file/get-url';
+    this._userFilesURL = environment.apiUrl + 'get-user-files';
+    this._userFileURL = environment.apiUrl + 'get-user-file';
+    this._delUserFile = environment.apiUrl + 'del-user-file';
+    this._shortUserFileUrl = environment.apiUrl + 'get-url';
   }
 
   getFiles() {

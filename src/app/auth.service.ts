@@ -13,8 +13,8 @@ export class AuthService {
   private readonly _loginURL;
 
   constructor(private http: HttpClient, private _router: Router) {
-    this._registerURL = environment.apiUrl + 'user/signup';
-    this._loginURL = environment.apiUrl + 'user/login';
+    this._registerURL = environment.apiUrl + 'signup';
+    this._loginURL = environment.apiUrl + 'login';
   }
 
   registerUser(user) {

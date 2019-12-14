@@ -10,7 +10,7 @@ export class UploadServiceService {
   private readonly _uploadURL;
 
   constructor(private _http: HttpClient) {
-    this._uploadURL = environment.apiUrl + 'file/submit-file';
+    this._uploadURL = environment.apiUrl + 'submit-file';
   }
 
   uploadFile(fd) {
