@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://13.127.100.86/api/',
+  apiUrl: 'http://filebox.bhavay.me/api/',
   env: 'prod'
 };
