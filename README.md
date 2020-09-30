@@ -1,4 +1,4 @@
-first set up backend - instructions provided in readme.md file of backend repository
+First set up backend - Instructions provided in readme.md file of backend repository
 
 install angular cli globally :
 npm install -g @angular/cli
